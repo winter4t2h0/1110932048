@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title>Untitled</title>
         <!-- Bootstrap -->
 	    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
@@ -12,27 +13,24 @@
     </head>
     <body>
   	    <!-- body code goes here -->
-        <div class="big0">
-            <!-- NAV BAR -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">這是一個部落格</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-info">
+            <a class="navbar-brand" href="#"><i class="fas fa-rss"></i><b>這是一個部落格</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Links</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" > <!--style="width: 80%"-->
             <!-- SITE PATH -->
             <div>
                 <nav>
@@ -46,14 +44,93 @@
             <!-- CONTENT -->
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-info font-weight-bold">部落格標題</h1>
+                        <small>
+                            <i class="fas fa-user px-1"></i>黃粲宇1110932048
+                            <i class="fas fa-clock px-1"></i>2021-11-23
+                            <i class="fas fa-hashtag px-1"></i>離譜
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-7 col-sm-12">
-                        <h1>部落格標題</h1>
-                        <h6>作者 2021-11-23</h6>
-                        
+                        <div class="bg-light border py-2 px-3">
+
+                            <!-- True Contents -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non ultrices at, convallis ac nibh. Praesent tempus vehicula tortor eget pulvinar. Phasellus viverra imperdiet urna, et ullamcorper felis porttitor eget. Maecenas pulvinar dapibus ullamcorper.</p>
+                            <h2 class="text-secondary font-weight-bold">副標題</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non ultrices at, convallis ac nibh. Praesent tempus vehicula tortor eget pulvinar. Phasellus viverra imperdiet urna, et ullamcorper felis porttitor eget. Maecenas pulvinar dapibus ullamcorper. Aenean molestie felis at erat accumsan dapibus. Sed sagittis augue quis ullamcorper fermentum. Maecenas fringilla arcu et dui accumsan, lacinia interdum velit commodo. Curabitur sed tellus scelerisque, vehicula dolor blandit, lobortis ex. Pellentesque varius rutrum lectus, ut finibus est varius sit amet. Aliquam lorem ligula, iaculis id tellus ut, suscipit imperdiet justo. Nullam tempus, tortor sollicitudin euismod placerat, nisi neque malesuada sem, nec accumsan metus elit ut neque. Curabitur vulputate fringilla suscipit. Donec pellentesque convallis lacus, ac scelerisque arcu ultrices sed. Aliquam quis varius diam.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non ultrices at, convallis ac nibh. Praesent tempus vehicula tortor eget pulvinar. Phasellus viverra imperdiet urna, et ullamcorper felis porttitor eget. Maecenas pulvinar dapibus ullamcorper. Aenean molestie felis at erat accumsan dapibus. Sed sagittis augue quis ullamcorper fermentum. Maecenas fringilla arcu et dui accumsan,</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non ultrices at, convallis ac nibh. Praesent tempus vehicula tortor eget pulvinar. Phasellus viverra imperdiet urna, et ullamcorper felis porttitor eget. Maecenas  ullamcorper. Aenean molestie felis at erat accumsan dapibus. Sed sagittis augue quis ullamcorper fermentum. Maecenas fringilla arcu et dui accumsan,</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non uamcorper. Aenean molestie felis at erat accumsan dapibus. Sed sagittis augue quis ullamcorper fermentum. Maecenas fringilla arcu et dui accumsan,</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ex, tincidunt non ultrices at, convallis ac nibh. Praesent tempus vehicula tortor eget pulvinar. Phasellus viverra imperdiet urna, et ullamcorper felis porttitor eget. Maecenas pulvinar dapibus ullamcorper. Aenean molestie felis at erat accumsan dapibus. Sed sagittis augue quis ullamcorper fermentum. Maecenas fringilla arcu et dui accumsan,</li>
+                            </ul>
+                            <!-- FLUID IMAGE -->
+                            <img src="bg.jpg" class="img-fluid" alt="...">
+                            <!-- COMMENT SECTION -->
+                            <div class="card">
+                                <h5 class="card-header">Featured</h5>
+                                <div class="card-body">
+                                    <div class="media">
+                                        <img src="https://fakeimg.pl/64x64/" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h6 class="font-weight-bold">新增評論</h6>
+                                            <textarea class="form-control"></textarea>
+                                            <button class="btn-block btn btn-light">提交</button>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <img src="https://fakeimg.pl/64x64/" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Center-aligned media</h5>
+                                            <p>She'll turn cold as a freezer. At the eh-end of it all. Stinging like a bee I earned my stripes. Bikinis, zucchinis, Martinis, no weenies. I hope you got a healthy appetite. We can dance, until we die, you and I, will be young forever. We're living the life. We're doing it right. Word on the street, you got somethin' to show me, me.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <img src="https://fakeimg.pl/64x64/" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Center-aligned media</h5>
+                                            <p>Wanna see the show in 3D, a movie. They say, be afraid you're not like the others, futuristic lover. Open up your heart. So I sat quietly, agreed politely. Last Friday night. Yeah, you're lucky if you're on her plane. I'll be your gift, give you something good to celebrate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                
+                <!-- TAGS -->
                     <div class="col-lg-5 col-sm-12">
-                        --TAGS--
+                        <div class="bg-light border p-3">
+                            <h2>Tags</h2>
+                            <div>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badgeasadaa</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badgebbbbbbbbbbb</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge7777777</a>
+                                <a class="badge badge-info text-white"><i class="fas fa-tag"></i>Badge</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER CARD -->
+        <div class="bg-light p-3 mt-2">
+            <div class="container justify-content-between d-flex">
+                <div>
+                    版權宣告Here
+                </div>
+                <div>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
                 </div>
             </div>
         </div>
