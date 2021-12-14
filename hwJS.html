@@ -2,37 +2,39 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Untitled Document</title>
+        <title>1110932048 - JS</title>
+        <style>
+            span{
+                display: inline-block;
+                width: 18px;
+                text-align: right;
+            }
+        </style>
     </head>
 
     <body>
+        <table border="1" style="margin: auto">
+            <tr>
+                <td colspan="3" style="background-color: black; color: white; text-align: center">
+                    九九乘法表
+                </td>
+            </tr>
+            <script>
+                for(i=1; i<=9; i++){
+                    if (i % 3 == 1){
+                        document.write("<tr>");
+                    }
+                    document.write("<td>");
+                    for(n=1; n<=9; n++){
+                        document.write(i + " * " + n + "= "+"<span>"+i*n+"</span>"+"<br>");
+                    }
+                    document.write("</td>");
+                    if (i % 3 == 0){
+                        document.write("</tr>");
+                    }
+                }
+            </script>
+        </table>
         <p id="p1">ppppppppppppppp</p>
     </body>
-    <script>
-        console.log("-")
-//        a = 123;
-//        b = [1,2,'HHHHHHHHH', true, 1==2];
-//        c = {
-//            user:"1234",
-//            user2:"4567",
-//            gogog: function(){
-//                return "312321321321"
-//            }
-//        };
-//        console.log(b);
-//        console.log(c);
-//        console.log(c["user"]);
-//        a = new Array();
-//        if(a instanceof Array){
-//            console.log(true)
-//        }
-//        else{
-//            console.log(false)
-//        }
-        for (i = 1; i < 9 ; i++){
-            for (n = 1; n < 9 ; n++){
-                console.log(i, n)
-            }
-        } 
-    </script>
 </html>
