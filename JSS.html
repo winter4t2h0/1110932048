@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Untitled Document</title>
         <style type="text/css">
+/*
             #timebar {
                 display: inline;
                 background-color: black;
@@ -13,11 +14,27 @@
                 margin: 50px auto;
                 padding: 5px;
             }
+*/
         </style>
     </head>
 
     <body>
         <div id="timebar"></div>
+        <script>
+            s = 4;
+            function show(){
+                str = "Redirecting you to www.google.com.tw in "+--s+" second(s)......";
+                timebar = document.getElementById("timebar");
+                timebar.innerHTML = str;
+                if(s<=0){
+                    location.href="https://www.iwara.tv"
+                }
+            };
+            setInterval(show ,1000);
+            show();
+        </script>
+        
+<!--
         <script type="text/javascript">
             function showtime(){
                 date = new Date();
@@ -32,5 +49,6 @@
                 console.log(str," ,timer stopped");
             };
         </script>
+-->
     </body>
 </html>
