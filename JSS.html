@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Document</title>
+        <style type="text/css">
+            #timebar {
+                display: inline;
+                background-color: black;
+                border-radius: 20px;
+                color: white;
+                font-size: 36px;
+                margin: 50px auto;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="timebar"></div>
+        <script type="text/javascript">
+            function showtime(){
+                date = new Date();
+                str = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+                timebar = document.getElementById("timebar");
+                timebar.innerHTML = str;
+            };
+            showtime();
+            settimer = setInterval(showtime, 1000);
+            timebar.onclick = function() {
+                clearInterval(settimer);
+                console.log(str," ,timer stopped");
+            };
+        </script>
+    </body>
+</html>
